@@ -89,7 +89,7 @@
       <div id="tab1" class="content">
         <h2>The Archaic Time</h2>
         <p>This is the content for The Archaic Time.</p>
-
+        <div class="container">
         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7122960015178518528" target="_blank" rel="noopener noreferrer" class="btn-linkedin">Read More on LinkedIn</a>
         <div class="card-white">
           <img src="https://media.licdn.com/dms/image/D4E12AQE5HdakjBmsqQ/article-cover_image-shrink_720_1280/0/1697910756276?e=1714003200&v=beta&t=jpd07WQHwvJHij5ZU5n6PYPnioleohXRH7HsoCJj2Eg" alt="Slavery in Ancient Rome">
@@ -97,7 +97,7 @@
           <p>Dive into the thrilling saga of "Spartacus: The Gladiator Slave Who Threatened the Roman Republic," an epic tale of courage, rebellion, and the indomitable spirit of a man who dared to challenge an empire..</p></p>
           <a href="https://www.linkedin.com/feed/update/urn:li:activity:7122960015178518528" class="btn-cta"> Read Now</a> <!-- Bouton CTA -->
         </div>
-        div class="card-white">
+        <div class="container"></div>
                 <img src="https://media.licdn.com/dms/image/D4E12AQGIwfx11qvAyw/article-cover_image-shrink_720_1280/0/1708305432242?e=1714003200&v=beta&t=U-QH3Y4-8GMWnExjb0m-d4WiPfDjVOoB_Q14MJNopOM" alt="Slavery in Ancient Rome">
                 <h3> Remus and Romulus: Between myths and reality.</h3>
                 <p> The city of Rome, with its millennia-spanning legacy, continues to captivate the imagination of the world. Its origins, shrouded in myth yet increasingly illuminated by archaeological and historical research, offer a narrative as complex as the city itself. This exploration delves into the layers of Rome's foundation, from the legendary tale of Romulus and Remus to the insights provided by contemporary archaeological discoveries and the reflections of ancient historians.</p></p>
@@ -112,6 +112,8 @@
       <div id="tab2" class="content">
         <h2>The Roman Republic and its future Empire</h2>
         <p>This is the content for The Roman Empire.</p>
+        <div class="container"></div>
+        <div class="container"></div>
               <div class="card-white">
                 <img src="https://magazineclonerepub.blob.core.windows.net/mcepub/2350/203414/image/bd1cf709-7648-44d1-bcd6-6c57f7734167.jpg" alt="Slavery in Ancient Rome">
                 <h3>Slavery in Ancient Rome</h3>
@@ -155,6 +157,7 @@
       <div id="tab3" class="content">
         <h2>The Fall of Rome</h2>
         <p>This is the content for The Fall of Rome.</p>
+        <div class="container"></div>
         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7158474021548736512" target="_blank" rel="noopener noreferrer" class="btn-linkedin">Read More on LinkedIn</a>
       </div>
 
@@ -209,6 +212,32 @@
         }
         document.getElementById(tabName).style.display = "block";
         event.currentTarget.className += " active";
+function openTab(tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.className += " active";
+}
+
+// Accessibility: Enable keyboard navigation for tabs
+document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab");
+    tabs.forEach(tab => {
+        tab.setAttribute("tabindex", "0");
+        tab.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                openTab(tab.getAttribute("onclick").split("'")[1]);
+            }
+        });
+    });
+});
 
         
     }
