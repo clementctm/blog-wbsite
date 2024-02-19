@@ -19,6 +19,45 @@ h1 {
     margin-top: 0; /* Adjusted from -130px for better spacing */
 }
 
+/* Tab styling for improved navigation */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tab {
+    flex-grow: 1;
+    background-color: #F5EEE6;
+    color: #800000;
+    text-align: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 5px; /* Ajout d'une marge entre les onglets */
+}
+
+.tab:hover, .tab.active {
+    background-color: #C19A6B;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Enhancements for hover effects on buttons and tabs */
+.btn-check, .btn-cta, a {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-check:hover, .btn-cta:hover, a:hover {
+    background-color: #800000;
+    color: #F5EEE6;
+    transform: scale(1.05);
+}
+
+
 a, .btn-check, .btn-card {
     color: #800000;
     background-color: #C19A6B;
