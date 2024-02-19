@@ -18,6 +18,8 @@ h1, h2, h3,h4 {
 h1 {
     padding-top: 30px;
     margin-top: 0; /* Adjusted from -130px for better spacing */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 a, .btn-check, .btn-card {
