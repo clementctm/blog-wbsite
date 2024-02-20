@@ -1,24 +1,132 @@
+/* Réinitialisation des styles de base */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
-    color: #800000;
-    background-color: #F5EEE6;
+    color: #800000; /* Couleur de texte principale */
+    background-color: #F5EEE6; /* Couleur de fond globale */
 }
 
-h1, h2, h3,h4 {
-    color: #800000;
+/* Styles des titres */
+h1, h2, h3, h4 {
+    color: #800000; /* Couleur de texte pour les titres */
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
-/* Improved readability for h1 and adjusted margin for better spacing */
+/* Ajustements pour le titre principal */
 h1 {
     padding-top: 30px;
-    margin-top: 0; /* Adjusted from -130px for better spacing */
+    margin-top: 0; /* Suppression de la marge supérieure pour un meilleur espacement */
+    font-weight: bold;
 }
 
+/* Styles des liens et des boutons */
+a, .btn-check, .btn-card {
+    color: #800000; /* Couleur de texte pour les liens et boutons */
+    background-color: #C19A6B; /* Couleur d'arrière-plan pour les liens et boutons */
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #C19A6B; /* Bordure des boutons */
+    border-radius: 5px; /* Coins arrondis pour les boutons */
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Effet de transition fluide */
+}
+
+/* Effets au survol pour les liens et les boutons */
+a:hover, .btn-check:hover, .btn-card:hover {
+    color: #F5EEE6; /* Changement de couleur de texte au survol */
+    background-color: #800000; /* Changement de couleur d'arrière-plan au survol */
+    transform: scale(1.05); /* Légère mise à l'échelle pour un effet visuel */
+}
+
+/* Styles de la bannière */
+.banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #800000; /* Couleur de texte pour la bannière */
+    text-align: center;
+    padding: 180px 0;
+    font: bolder;
+}
+
+.banner .cta-button {
+    background-color: #800000; /* Couleur de fond du bouton */
+    color: #FFFFFF; /* Couleur de texte du bouton */
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Conteneur pour centrer le contenu */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styles des cartes d'articles */
+.card-white {
+    background: #F5EEE6; /* Couleur d'arrière-plan pour les cartes */
+    box-shadow: 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée pour les cartes */
+    border-radius: 5px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    color: #800000; /* Couleur de texte pour les cartes */
+    font-family: 'Times New Roman', Times, serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet de transition fluide */
+}
+
+/* Styles des images dans les cartes d'articles */
+.card-white img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Mise en grille des cartes d'articles */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Styles du pied de page */
+.footer {
+    background: #C19A6B; /* Couleur d'arrière-plan pour le pied de page */
+    color: #800000; /* Couleur de texte pour le pied de page */
+    text-align: left;
+    padding: 24px 20px;
+}
+
+/* Styles des onglets de navigation */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tab {
+    flex-grow: 1;
+    background-color: #F5EEE6; /* Couleur d'arrière-plan pour les onglets */
+    color: #800000; /* Couleur de texte pour les onglets */
+    text-align: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Effet de transition fluide */
+}
+
+.tab:hover, .tab.active {
+    background-color: #C19A6B; /* Couleur d'arrière-plan au survol */
+    color: #FFFFFF; /* Couleur de texte au survol */
+    transform: translateY(-3px); /* Légère translation vers le haut au survol */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Légère ombre portée au survol */
+}
 /* Tab styling for improved navigation */
 .tabs {
     display: flex;
@@ -58,158 +166,36 @@ h1 {
 }
 
 
-a, .btn-check, .btn-card {
-    color: #800000;
-    background-color: #C19A6B;
-    text-decoration: none;
-    padding: 10px 15px;
-    border: 2px solid #C19A6B;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
 
-/* Hover effects for links and buttons for a more interactive feel */
-a:hover, .btn-check:hover, .btn-card:hover {
-    color: #F5EEE6;
-    background-color: #800000;
-    transform: scale(1.05);
-}
 
-/* Banner styling */
-.banner {
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #C19A6B;
-    text-align: center;
-    padding: 180px 0;
-}
 
-/* Container for centering content */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
 
-/* Card styles for articles and other elements */
-.card-white {
-    background: #F5EEE6;
-    box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    width: 80%;
-    margin: 20px auto;
-    padding: 20px;
-    color: #800000;
-    font-family: 'Times New Roman', Times, serif;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-white img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-/* Grid layout for articles/cards */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-}
-
-/* Footer styling */
-.footer {
-    background: #C19A6B;
-    color: #800000;
-    text-align: left;
-    padding: 24px 20px;
-}
-
-/* Tab styling for improved navigation */
-.tabs {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.tab {
-    flex-grow: 1;
-    background-color: #F5EEE6;
-    color: #800000;
-    text-align: center;
-    padding: 15px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.tab:hover, .tab.active {
-    background-color: #C19A6B;
-    color: #FFFFFF;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-/* Enhancements for hover effects on buttons and tabs */
+/* Réglages pour les effets au survol sur les boutons et les onglets */
 .btn-check, .btn-cta, a {
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Effet de transition fluide */
 }
 
 .btn-check:hover, .btn-cta:hover, a:hover {
-    background-color: #800000;
-    color: #F5EEE6;
-    transform: scale(1.05);
+    background-color: #800000; /* Changement de couleur d'arrière-plan au survol */
+    color: #F5EEE6; /* Changement de couleur de texte au survol */
+    transform: scale(1.05); /* Légère mise à l'échelle pour un effet visuel */
 }
 
-/* Responsive adjustments */
+/* Ajustements pour les écrans de taille moyenne */
 @media screen and (max-width: 768px) {
     .container, .cards {
-        width: 95%;
-        grid-template-columns: 1fr;
+        width: 95%; /* Réduction de la largeur pour s'adapter aux écrans plus petits */
+        grid-template-columns: 1fr; /* Affichage en une seule colonne */
     }
     
     header, footer {
-        padding: 15px 0;
+        padding: 15px 0; /* Réduction de la marge intérieure pour une meilleure lisibilité */
     }
 }
-/* Style global pour les cartes d'article */
-.card-white {
-    background: #F5EEE6;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 20px auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: min-content%; /* Assure une largeur maximale pour la cohérence */
-}
 
-/* Style global pour les images dans les cartes d'article */
-.card-white img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-/* Layout des articles en grille pour les rubriques */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 articles par ligne */
-    grid-gap: 20px;
-    padding: 20px 0;
-}
-
+/* Ajustements pour les écrans de taille plus grande */
 @media screen and (max-width: 1024px) {
     .cards {
-        grid-template-columns: repeat(2, 1fr); /* 2 articles par ligne sur écrans moyens */
+        grid-template-columns: repeat(2, 1fr); /* Affichage de deux articles par ligne sur les écrans moyens */
     }
 }
-
