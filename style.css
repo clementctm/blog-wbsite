@@ -82,6 +82,10 @@ a:hover, .btn-check:hover, .btn-card:hover {
     text-align: justify;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet de transition fluide */
 }
+.text-justify {
+    text-align: justify;
+}
+
 .image-item {
     display: flex;
     flex-direction: column;
