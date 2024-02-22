@@ -13,7 +13,6 @@ h1, h2, h3, h4 {
     color: #800000; /* Couleur de texte pour les titres */
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    text-align: justify;
 }
 
 /* Ajustements pour le titre principal */
