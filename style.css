@@ -21,6 +21,11 @@ h1 {
     margin-top: 0; /* Suppression de la marge supérieure pour un meilleur espacement */
     font-weight: bold;
 }
+h4 { 
+    color: #800000; /* Couleur de texte pour les titres */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: justify;
 
 /* Styles des liens et des boutons */
 a, .btn-check, .btn-card {
