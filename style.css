@@ -68,7 +68,7 @@ a:hover, .btn-check:hover, .btn-card:hover {
 /* Styles des cartes d'articles */
 .card-white {
     background: #F5EEE6; /* Couleur d'arrière-plan pour les cartes */
-    box-shadow: 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée pour les cartes */
+    box-shadow: 4px 8px #800000; /* Ombre portée pour les cartes */
     border-radius: 5px;
     width: 80%;
     margin: 20px auto;
