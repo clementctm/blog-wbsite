@@ -82,6 +82,23 @@ a:hover, .btn-check:hover, .btn-card:hover {
     text-align: justify;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet de transition fluide */
 }
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Centre l'élément sur la page */
+}
+
+.image-item .description {
+    margin-top: 1rem; /* Espacement entre l'image et la description */
+    text-align: justify; /* Justifie le texte */
+    width: 80%; /* Définit une largeur pour justifier le texte */
+}
+
+.image-item .linkedin-btn {
+    margin-top: 0.5rem; /* Espacement entre la description et le bouton */
+
+
 
 /* Styles des images dans les cartes d'articles */
 .card-white img {
