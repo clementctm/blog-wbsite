@@ -13,6 +13,7 @@ h1, h2, h3, h4 {
     color: #800000; /* Couleur de texte pour les titres */
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    text-align: justify;
 }
 
 /* Ajustements pour le titre principal */
@@ -26,7 +27,8 @@ h4 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: justify;
-
+}
+*
 /* Styles des liens et des boutons */
 a, .btn-check, .btn-card {
     color: #800000; /* Couleur de texte pour les liens et boutons */
@@ -73,6 +75,7 @@ a, .btn-check, .btn-card {
     padding: 20px;
     color: #800000; /* Couleur de texte pour les cartes */
     font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet de transition fluide */
 }
 
