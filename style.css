@@ -6,6 +6,8 @@ body {
     font-size: 18px;
     color: #800000; /* Couleur de texte principale */
     background-color: #F5EEE6; /* Couleur de fond globale */
+    text-align: justify;
+    
 }
 
 /* Styles des titres */
@@ -13,6 +15,7 @@ h1, h2, h3, h4 {
     color: #800000; /* Couleur de texte pour les titres */
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    text-align: justify;
 }
 
 /* Ajustements pour le titre principal */
@@ -20,6 +23,7 @@ h1 {
     padding-top: 30px;
     margin-top: 0; /* Suppression de la marge supérieure pour un meilleur espacement */
     font-weight: bold;
+    text-align: justify;
 }
 
 /* Styles des liens et des boutons */
@@ -85,6 +89,7 @@ a:hover, .btn-check:hover, .btn-card:hover {
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* Mise en grille des cartes d'articles */
@@ -164,11 +169,6 @@ a:hover, .btn-check:hover, .btn-card:hover {
     color: #F5EEE6;
     transform: scale(1.05);
 }
-
-
-
-
-
 
 /* Réglages pour les effets au survol sur les boutons et les onglets */
 .btn-check, .btn-cta, a {
