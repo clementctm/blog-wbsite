@@ -1,4 +1,3 @@
-/* Réinitialisation des styles de base */
 body {
     margin: 0;
     padding: 0;
@@ -144,6 +143,65 @@ a, .btn-check, .btn-card {
     color: #FFFFFF; /* Couleur de texte au survol */
     transform: translateY(-3px); /* Légère translation vers le haut au survol */
     box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Légère ombre portée au survol */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.tab.active {
+    background-color: #ddd;
+}
+.content {
+    display: none;
+    padding: 20px;
+    
+}
+.content.active {
+    display: block;
+}
+.btn-linkedin {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077B5;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn-linkedin:hover {
+  background-color: #005682;
+}
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px 10px;
+    text-align: center;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons li {
+    margin: 0 10px;
+}
+.social-icons a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Ajustements pour les écrans de taille moyenne */
