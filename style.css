@@ -79,6 +79,7 @@ a:hover, .btn-check:hover, .btn-card:hover {
     padding: 20px;
     color: #800000; /* Couleur de texte pour les cartes */
     font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet de transition fluide */
 }
 
@@ -132,6 +133,7 @@ a:hover, .btn-check:hover, .btn-card:hover {
     transform: translateY(-3px); /* Légère translation vers le haut au survol */
     box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Légère ombre portée au survol */
 }
+
 /* Tab styling for improved navigation */
 .tabs {
     display: flex;
