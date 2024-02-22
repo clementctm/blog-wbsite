@@ -7,7 +7,6 @@ body {
     color: #800000; /* Couleur de texte principale */
     background-color: #F5EEE6; /* Couleur de fond globale */
     text-align: justify;
-    
 }
 
 /* Styles des titres */
@@ -38,13 +37,6 @@ a, .btn-check, .btn-card {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Effet de transition fluide */
 }
 
-/* Effets au survol pour les liens et les boutons */
-a:hover, .btn-check:hover, .btn-card:hover {
-    color: #F5EEE6; /* Changement de couleur de texte au survol */
-    background-color: #800000; /* Changement de couleur d'arrière-plan au survol */
-    transform: scale(1.05); /* Légère mise à l'échelle pour un effet visuel */
-}
-
 /* Styles de la bannière */
 .banner {
     background-size: cover;
@@ -52,7 +44,6 @@ a:hover, .btn-check:hover, .btn-card:hover {
     color: #800000; /* Couleur de texte pour la bannière */
     text-align: center;
     padding: 180px 0;
-    font: bolder;
 }
 
 .banner .cta-button {
@@ -63,6 +54,7 @@ a:hover, .btn-check:hover, .btn-card:hover {
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 /* Conteneur pour centrer le contenu */
 .container {
     width: 80%;
@@ -79,11 +71,7 @@ a:hover, .btn-check:hover, .btn-card:hover {
     padding: 20px;
     color: #800000; /* Couleur de texte pour les cartes */
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effet de transition fluide */
-}
-.text-justify {
-    text-align: justify;
 }
 
 .image-item {
@@ -101,8 +89,7 @@ a:hover, .btn-check:hover, .btn-card:hover {
 
 .image-item .linkedin-btn {
     margin-top: 0.5rem; /* Espacement entre la description et le bouton */
-
-
+}
 
 /* Styles des images dans les cartes d'articles */
 .card-white img {
@@ -111,7 +98,6 @@ a:hover, .btn-check:hover, .btn-card:hover {
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 20px;
-    text-align: justify;
 }
 
 /* Mise en grille des cartes d'articles */
@@ -125,7 +111,7 @@ a:hover, .btn-check:hover, .btn-card:hover {
 .footer {
     background: #C19A6B; /* Couleur d'arrière-plan pour le pied de page */
     color: #800000; /* Couleur de texte pour le pied de page */
-    text-align: left;
+    text-align: center; /* Centre le texte dans le pied de page */
     padding: 24px 20px;
 }
 
@@ -146,6 +132,7 @@ a:hover, .btn-check:hover, .btn-card:hover {
     padding: 15px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Effet de transition fluide */
+    margin: 0 5px; /* Ajout d'une marge entre les onglets */
 }
 
 .tab:hover, .tab.active {
@@ -153,55 +140,6 @@ a:hover, .btn-check:hover, .btn-card:hover {
     color: #FFFFFF; /* Couleur de texte au survol */
     transform: translateY(-3px); /* Légère translation vers le haut au survol */
     box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Légère ombre portée au survol */
-}
-
-/* Tab styling for improved navigation */
-.tabs {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.tab {
-    flex-grow: 1;
-    background-color: #F5EEE6;
-    color: #800000;
-    text-align: center;
-    padding: 15px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 0 5px; /* Ajout d'une marge entre les onglets */
-}
-
-.tab:hover, .tab.active {
-    background-color: #C19A6B;
-    color: #FFFFFF;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-/* Enhancements for hover effects on buttons and tabs */
-.btn-check, .btn-cta, a {
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-check:hover, .btn-cta:hover, a:hover {
-    background-color: #800000;
-    color: #F5EEE6;
-    transform: scale(1.05);
-}
-
-/* Réglages pour les effets au survol sur les boutons et les onglets */
-.btn-check, .btn-cta, a {
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Effet de transition fluide */
-}
-
-.btn-check:hover, .btn-cta:hover, a:hover {
-    background-color: #800000; /* Changement de couleur d'arrière-plan au survol */
-    color: #F5EEE6; /* Changement de couleur de texte au survol */
-    transform: scale(1.05); /* Légère mise à l'échelle pour un effet visuel */
 }
 
 /* Ajustements pour les écrans de taille moyenne */
